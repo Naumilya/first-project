@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- style -->
+    
+    <!-- favicon -->    <link rel="icon" href="css/images/favicon (2).ico">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- fonts -->
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img id="img__document" src="css/images/Screenshot_6.png" width="170px" alt=""></a>
+        </div>
+        <div class="container__form active" id="container__form">
+            <!-- <form action="mail.php" method="post"> -->
+                <div class="form__title">
+                    <h1>Ваше резюме</h1>
+                </div>
+                <div class="form__container"> 
+                    <div class="form__subtitle">
+                        <h2>1. Основная информация</h2>
+                    </div> 
+                    <div class="form__file">
+                        <div class="form__item">
+                            <label for="userPhoto"></label>
+                            <input required id="userImage" name="userPhoto" type="file" accept=".jpg, .jpeg, .png, .gif">
+                        </div>
+                    </div>
+
+                    <div class="form__space main-info">
+                        <div class="form__item">
+                            <label for="userName">Введите ваше имя</label>
+                            <input required type="text" name="userName" id="userName" placeholder="Иван Иванович Иванов" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="">Выбирите должность</label>
+                            <select required name="userWork" id="userWork">
+                                <option name="design" value="Веб-дизайнер" selected>Веб-дизайнер</option>
+                                <option value="Фронтенд разработчик">Фронтенд разработчик</option>
+                                <option value="Бэкенд разработчик">Бэкенд разработчик</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label for="userPhone userEmail">Введите ваши контактные данные</label>
+                            <input required type="text" name="userPhone" id="userPhone" placeholder="+7(999)999-99-99" required>
+                            <input required type="email" name="userEmail" id="userEmail" placeholder="papipu@mail.ru" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="userMoney">Желаемая зарплата</label>
+                            <input required type="number" name="userSalary" id="userSalary" placeholder="30 000 руб">
+                        </div>
+                        <div class="form__item">
+                            <label for="">Занятость</label>
+                            <select required name="userBusyness" id="userBusyness">
+                                <option name="full" value="Полная" selected>Полная</option>
+                                <option name="partial" value="Частичная">Частичная</option>
+                                <option name="stage" value="Стажировка">Стажировка</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label for="userbusinessTrip">Готовность к командировкам</label>
+                            <input required type="checkbox" name="userbusinessTrip" id="userbusinessTrip">
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="form__container"> 
+                    <div class="form__subtitle">
+                        <h2>2. Личная информация</h2>
+                    </div> 
+
+                    <div class="form__space main-info">
+                        <div class="form__item">
+                            <label for="userCity">Город проживания</label>
+                            <input type="text" name="userCity" id="userCity" placeholder="Москва" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="userСitizenship">Гражданство</label>
+                            <input type="text" name="userСitizenship" id="userСitizenship" placeholder="РФ" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="">Выбирите пол</label>
+                            <select name="userMale" id="userMale">
+                                <option name="male" value="Мужской" selected>Мужской</option>
+                                <option value="Женский">Женский</option>
+                                <option value="Другой">Другой</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label for="userAge">Дата рождения</label>
+                            <input type="date" name="userAge" id="userAge">
+                        </div>
+                        <div class="form__item">
+                            <label for="">Семейное положение</label>
+                            <select name="userPosition" id="userPosition">
+                                <option value="Женат/Замужем" selected>Женат/Замужем</option>
+                                <option value="Холост">Холост</option>
+                            </select>
+                        </div>
+                        <div class="form__item">
+                            <label for="userHaveChild">есть дети</label>
+                            <input type="checkbox" name="userHaveChild" id="userHaveChild">
+                        </div>
+                    </div>
+                </div>   
+                
+                <div class="form__container"> 
+                    <div class="form__subtitle">
+                        <h2>3. Опыт работы</h2>
+                    </div> 
+
+                    <div class="form__space main-info">
+                        <div class="form__item">
+                            <label for="userPos">Должность</label>
+                            <input type="text" name="userPos" id="userPos">
+                        </div>
+                        <div class="form__item">
+                            <label for="userOrganization">Организация</label>
+                            <input type="text" name="userOrganization" id="userOrganization">
+                        </div>
+                        <div class="form__item">
+                            <label for="dateSettled">Устроился</label>
+                            <input type="date" name="dateSettled" id="dateSettled">
+                            <label for="dateQuit">Уволился</label>
+                            <input type="date" name="dateQuit" id="dateQuit">
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="form__container"> 
+                    <div class="form__subtitle">
+                        <h2>4. Образование</h2>
+                    </div> 
+
+                    <div class="form__space main-info">
+                        <div class="form__item">
+                            <label for="userEducation">Образование</label>
+
+                            <input type="text" name="userEducation" id="userEducation">
+                        </div>
+                        <div class="form__item">
+                            <label for="userOrganization">Организация</label>
+
+                            <input type="text" name="userOrganization" id="userOrganization">
+                        </div>
+                        <div class="form__item">
+                            <label for="userEnrolled">Поступил</label>
+                            <input type="date" name="userEnrolled" id="userEnrolled">
+                            <label for="userEnding">Окончил</label>
+                            <input type="date" name="userEnding" id="userEnding">
+                        </div>
+                    </div>
+                </div>  
+            <!-- </form> -->
+                <button id="previewBtn" onclick="save()" class="button" type="button">Предпросмотр</button>
+        </div>
+ 
+        <div class="container__preview" id="container__preview">
+            <div class="form__preview">
+                <h1>Предпросмотр</h1>
+            </div>
+            <form action="mail.php" method="post" class="pages" id="form">
+            <div class="preview">
+                <div class="block0">
+                        <div class="nameWork">
+                            <div class="preview__item" id="userName">
+                                <p class="preview__name"></p>
+                            </div>
+                            <div class="preview__item" id="userWork">
+                                <p class="preview__userWork"></p>
+                            </div>
+                        </div>
+                        <div class="preview__photo">
+                            <img id="preview__userImage" src="" alt="" width="300px">
+                        </div>
+                </div>
+                        <div class="block1">
+                            <div class="card">
+                                    <div class="form__title">
+                                        <h2>Контакты</h2>
+                                    </div>
+                                <div class="preview__item" id="userPhone">
+                                    <div class="text__title">телефон</div>
+                                    <p class="preview__userPhone"></p>
+                                </div>
+                                <div class="preview__item" id="userEmail">
+                                    <div class="text__title">почта</div>
+                                    <p class="preview__userEmail"></p>
+                                </div>
+                            </div>
+
+                        <div class="card">
+                            <div class="form__title">
+                                <h2>Ваши пожелания</h2>
+                            </div>
+                            <div class="preview__item" id="userSalary">
+                                <div class="text__title">Желаемая зарплата в рублях:</div>
+                                <p class="preview__userSalary"></p>
+                            </div>
+                            <div class="preview__item" id="userBusyness">
+                                <div class="text__title">Занятость</div>
+                                <p class="preview__userBusyness"></p>
+                            </div>
+                            <div class="preview__item" id="userbusinessTrip">
+                                <div class="text__title">Готовность к командировкам</div>
+                                <p class="preview__userbusinessTrip"></p>
+                            </div>
+                        </div>
+                <div class="card">
+                    <div class="form__title">
+                        <h2>Личная информация</h2>
+                    </div>
+                    <div class="preview__item" id="userCity">
+                        <div class="text__title">Город проживания</div>
+                        <p class="preview__userCity"></p>
+                    </div>
+                    <div class="preview__item" id="userСitizenship">
+                        <div class="text__title">Гражданство</div>
+                        <p class="preview__userСitizenship"></p>
+                    </div>
+                    <div class="preview__item" id="userMale">
+                        <div class="text__title">Пол</div>
+                        <p class="preview__userMale"></p>
+                    </div>
+                    <div class="preview__item" id="userAge">
+                        <div class="text__title">Родился</div>
+                        <p class="preview__userAge"></p>
+                    </div>
+                    <div class="preview__item" id="userPosition">
+                        <div class="text__title">Семейное положение</div>
+                        <p class="preview__userPosition"></p>
+                    </div>
+                    <div class="preview__item" id="userHaveChild">
+                        <div class="text__title">Есть дети</div>
+                        <p class="preview__userHaveChild"></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="form__title">
+                        <h2>Опыт работы</h2>
+                    </div>
+                    <div class="preview__item" id="userPos">
+                        <div class="text__title">Должность</div>
+                        <p class="preview__userPos"></p>
+                    </div>
+                    <div class="preview__item" id="userOrganization">
+                        <div class="text__title">Организация</div>
+                        <p class="preview__userOrganization"></p>
+                    </div>
+                    <div class="preview__item" id="dateSettled">
+                        <div class="text__title">Дата устройства</div>
+                        <p class="preview__dateSettled"></p>
+                    </div>
+                    <div class="preview__item" id="dateQuit">
+                        <div class="text__title">Дата увольнения</div>
+                        <p class="preview__dateQuit"></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="form__title">
+                        <h2>Образование</h2>
+                    </div>
+                    <div class="preview__item" id="userEducation">
+                        <div class="text__title">Уровень образование</div>
+                        <p class="preview__userEducation"></p>
+                    </div>
+                    <div class="preview__item" id="userEnrolled">
+                        <div class="text__title">Дата поступления</div>
+                        <p class="preview__userEnrolled"></p>
+                    </div>
+                    <div class="preview__item" id="userEnding">
+                        <div class="text__title">Дата окончания</div>
+                        <p class="preview__userEnding"></p>
+                    </div>
+
+                </div>
+            </div>
+            </form>
+        </div>
+        <button id="backBtn" class="button" type="button">Редактировать</button>
+        <button id="doCapture" class="button" type="button" onclick="doCapture()">Скачать</button>
+        <button id="sendBtn" onclick="sendBtn()" class="button" type="submit">Отправить</button>
+    </div>
+    <!-- scripts -->
+    <script src="js/html2canvas.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/like.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/FileSaver.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <!-- scripts -->
+</body>
+</html>

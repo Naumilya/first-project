@@ -1,0 +1,432 @@
+/*reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    /* line-height:1; */
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+
+
+/* основа */
+
+
+
+.nav__links{
+padding-left: 15px;
+
+}
+
+body{
+    background-image: url('images/1593748924_47-p-foni-dlya-programmistov-67.jpg');
+}
+
+.container{
+    max-width: 1170px;
+    text-align: center;
+}
+
+header{
+    height: 80px;
+    background-color: #fff;
+    margin:  auto;
+}
+
+.logo{
+    float: left;
+    display: flex;
+}
+
+#logo__text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    margin: auto;
+    padding: 17px 0px;
+}
+
+.nav{
+    float: right;
+    margin-top: 20px;
+    display: flex;
+}
+
+
+/* #btnResume{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 15px;
+    background-color: #006eff;
+    color: #fff;
+    border-radius: 21px;
+    border: none;
+}
+
+#btnResume:hover{
+    transition: 0.2s;
+    background-color: #000;
+    border: 1px solid #000;
+} */
+
+/* #btnAboutUs{
+    margin-left: 25px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 15px;
+    background-color: #006eff;
+    color: #fff;
+    border-radius: 21px;
+    border: none;
+}
+
+
+#btnAboutUs:hover{
+    transition: 0.2s;
+    background-color: #000;
+    border: 1px solid #000;
+} */
+
+/* главная страница */
+
+.main__compozition{
+    display: flex;
+    margin-top: 70px;
+    /* background-color: #6ea9f7d8; */
+    border-radius: 21px;
+    padding: 30px;
+    justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+    
+    .main__compozition{
+        margin-top: 70px;
+    }
+
+}
+
+.main__text{
+    max-width: 500px;
+    min-height: 250px;
+    height: 250px;
+    /* box-shadow: 3px 4px 5px #000; */
+    /* background-color: #fff; */
+    border-radius: 21px;
+}
+
+.main__title{
+    color: #fff;
+    padding: 15px;
+    font-size: 54px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+
+    text-align: left;
+    float: left;
+    list-style: 1px solid #006eff;;
+}
+
+
+
+.under-main__title{
+    padding: 15px;
+    color: #fff;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    font-weight: 400;
+
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+    
+}
+
+
+.text_btnYourResume{
+    color: #fff;
+}
+
+.img__main {
+    display: block;
+}
+@media screen and (min-width: 290px) and (max-width: 900px) {
+    .img__main {
+        display: none;
+    }
+}
+
+/* btn */
+
+
+.btnYourResume{
+    float: center;
+    margin-top: 200px;
+}
+
+@media screen and (min-width: 800px){
+    
+
+.btnYourResume{
+
+    float: center;
+    margin-top: 150px;
+}
+
+}
+
+.text__btnYourResume{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#btnYourResume{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 10px 25px;
+    color: #fff;
+    background-color: #006eff;
+    border-radius: 21px;
+    border: none;
+    margin-top: 15px;
+}
+
+#btnYourResume:hover{
+    transition: 0.4s;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+/* hidden */
+
+.hidden{
+    display: none;
+}
+
+.line{
+    display: inline-flex;
+}
+
+.main__clients{
+    margin-top: 100px;
+    background-color: #000;
+    color: #fff;
+    padding: 100px 0 5px 0;
+    text-align: center;
+
+}
+
+.clients{
+    display: none;
+}
+
+@media screen and (min-width: 800px) {
+    .clients{
+        display: block;
+    }
+}
+
+#our_clients{
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.line{
+   
+}
+
+#img_clients{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+
+
+.line{
+    margin-bottom: 30px;
+}
+
+.name_client{
+    margin: 25px;
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.reviews{
+    background-color: #6ea9f7d8;
+    color: #fff;
+    padding: 100px 0 100px 0;
+    text-align: center;
+}
+
+.text_review{
+
+}
+
+#our_reviews{
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #000;
+    font-weight: 700;
+}
+
+.review{
+    font-size: 20px;
+    text-align: center;
+
+    background-color: #000;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+.review:hover{
+    opacity: 0.9;
+}
+
+@media screen and (min-width: 500px) {
+    .review{
+        margin: 15px 200px;
+    }
+}
+
+/* галлерея */
+
+.main-wrapper{
+    text-align: center;
+    padding: 100px 0 105px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.main__work{
+    margin-bottom: 175px
+}
+
+#title_Gallery{
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.text_gallery{
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: #cccccc;
+}
+
+.gallery img:hover{
+    opacity: 0.9;
+}
+
+
+@media screen and (max-width: 500px) {
+    .line1 img:not(:first-child){
+        display: none;
+    }
+    
+    .line2 img:not(:first-child){
+        display: none;
+    }
+    
+    .line3 img:not(:first-child){
+        display: none;
+    }
+}
+
+.map_wrapper{
+    text-align: center;
+    padding: 100px 0 105px 0;
+    background-color: #000;
+    color: #fff;
+
+}
+
+
+html{
+    width: 100%;
+}
+
+
+
+

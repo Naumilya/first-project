@@ -1,0 +1,297 @@
+
+/*reset*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top: 1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+/* reset */
+.nav__link{
+    padding-left: 15px;
+}
+
+
+
+.container{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E6E6FA;
+}
+
+.form__container{
+    border: 3px solid #006eff;
+    margin-top: 50px;
+}
+
+.form__container_active{
+    display: none;
+}
+
+.form__title{
+
+}
+
+.form__subtitle{
+    padding: 15px;
+    text-align: center;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.form__space{
+    display: block;
+    padding: 10px;
+}
+
+
+.form__item{
+    border: 1px solid #c1c1c1;
+    padding: 15px;
+    margin: 15px;
+    background-color: #fff;
+}
+
+
+.form__item:hover{
+    border: 1px #000 solid;
+}
+
+.button{
+    margin: 25px;
+    background-color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #000fff;
+    color: #fff;
+}
+
+.button:before{
+    opacity: .3;
+    transition: .5; 
+}
+
+.button:after{
+    opacity: 1;
+    transition: .5;
+}
+
+#userOrganization{
+    width: 100%;
+}
+
+#userPhone{
+    margin: 5px;
+}
+
+#userEmail{
+    margin: 5px;
+}
+
+#dateSettled{
+    margin: 5px;
+}
+
+#dateQuit{
+    margin: 5px;
+}
+
+#userEducation{
+    width: 100%;
+}
+
+#sendBtn{
+
+}
+
+/* preview */
+
+.preview{
+    display: block;
+    border: 3px solid #006eff;
+    margin-top: 70px;
+}
+
+.container__form{
+    display: none;
+}
+
+
+.container__preview{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+
+.nameWork{
+    margin-left: 70px;
+}
+
+.preview__item{
+    text-align: left;
+}
+
+
+@media screen and (min-width: 800px) {
+
+
+    .preview__item{
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    .card{
+        margin-top: 120px;
+        margin: 30px 70px 0 70px;
+    }
+
+}
+
+.preview__name{
+    font-size: 40px;
+    text-shadow: #c1c1c1 3px 3px;
+    text-transform: capitalize;
+
+}
+
+.preview__userWork{
+    font-size: 24px;
+    color: #006eff;
+    text-shadow: #c1c1c1 1px 3px 1px;
+}
+
+.preview__photo{
+    margin-left: 70px;
+}
+
+.card{
+    padding: 15px;
+    font-size: 24px;
+    /* border: 3px solid #6ea9f7d8; */
+    margin-top: 30px;
+
+}
+
+.text__title{
+   color: #c1c1c1; 
+   margin-top: 15px;
+}
+
+.preview__userPhone{
+    font-size: 18px;
+    /* margin-left: 70px; */
+}
+
+.preview__userEmail{
+    font-size: 18px;
+}
+
+.preview__userSalary{
+    font-size: 18px;
+}
+
+/* blocks */
+
+
+
+.block0{
+
+  display: block;  
+}
+
+.block1{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: block;
+}
+
+
+@media screen and (min-width: 290px) and (max-width: 900px) {
+    .preview__photo{
+        margin-left: 15px;
+    }
+}
+
+.hidden{
+    display: none;
+}
